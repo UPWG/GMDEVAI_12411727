@@ -1,0 +1,5 @@
+"*.meta text eol=lf" 
+"*.cs text eol=lf" 
+"*.unity text eol=lf" 
+"*.asset text eol=lf" 
+"*.jpg binary" 
