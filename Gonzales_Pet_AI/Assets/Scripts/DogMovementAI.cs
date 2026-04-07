@@ -25,12 +25,7 @@ public class DogMovementAI : MonoBehaviour
 
         if (direction != Vector3.zero)
         {
-            Quaternion targetRot = Quaternion.LookRotation(direction);
-            transform.rotation = Quaternion.Slerp(
-                transform.rotation,
-                targetRot,
-                Time.deltaTime * rotSpeed
-            );
+            this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), Time.deltaTime * rotSpeed);
         }
 
         float targetSpeed = Vector3.Distance(player, transform.position) > 3f ? speed : 0f;
