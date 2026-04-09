@@ -114,13 +114,10 @@ public class AIControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Evade(target.transform.position);
-        //Hide();
         if (target == null)
         {
             Wander();
         }
-        //CleverHide();
     }
     private void OnTriggerEnter(Collider other)
     {
