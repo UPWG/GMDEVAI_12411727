@@ -14,7 +14,7 @@ public class swordCollider : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            ai.weaponCol.GetComponent<Health>().TakeDamage(1);
+            other.GetComponent<Health>().TakeDamage(1);
 
         }
 
