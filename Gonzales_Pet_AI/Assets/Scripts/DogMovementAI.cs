@@ -20,7 +20,7 @@ public class DogMovementAI : MonoBehaviour
     void LateUpdate()
     {
         Vector3 player = target.position;
-
+            
         direction = (player - transform.position).normalized;
 
         if (direction != Vector3.zero)

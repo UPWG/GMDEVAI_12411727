@@ -7,8 +7,9 @@ public class NPCBaseFSM : StateMachineBehaviour
     public GameObject NPC;
     public GameObject opponent;
     public float speed = 2.0f;
-    public float rotSpeed = 1.0f;
-    public float accuracy = 3.0f;
+    public float visionDist = 20.0f; 
+    public float visionAngle = 45.0f;
+    public float attackRange = 6f;
 
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
